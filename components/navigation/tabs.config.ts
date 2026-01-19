@@ -1,7 +1,7 @@
 import { Home, Briefcase, Code, Award, LucideIcon } from "lucide-react";
-import HomeTab from "../homTab";
-import ExperienceTab from "../experience";
-import ProjectsTab from "../projects";
+import HomeTab from "../tabs/homTab";
+import ExperienceTab from "../tabs/experience";
+import ProjectsTab from "../tabs/projects";
 
 
 export interface TabConfig {

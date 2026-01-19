@@ -1,7 +1,7 @@
 'use client'
 import { ProfileHeader } from "@/components/layout/header/ProfileHeader";
 import { TabsNavigation } from "@/components/navigation/TabsNavigation";
-import ThemeToggle from "@/components/theme-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { useTabs } from "@/hooks/useTabs";
 import { AnimatePresence, motion } from "motion/react";
 

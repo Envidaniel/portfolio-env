@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { CursorTrail } from "@/components/CursorTrail";
 
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={spaceGrotesk.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem={false}>
+        <CursorTrail />
+        <div className="aurora-backgroud"></div>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
       </body>

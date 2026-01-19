@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Experience } from "./experience.data";
-import { Badge } from "../ui/Badge";
+import { Badge } from "../../ui/Badge";
 
 
 interface Props {

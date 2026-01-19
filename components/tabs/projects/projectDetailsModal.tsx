@@ -1,5 +1,5 @@
 import { FullProjectDetails } from "@/types/projects";
-import { Modal } from "../ui/Modal";
+import { Modal } from "../../ui/Modal";
 import Image from "next/image";
 import { ExternalLink, FolderGit } from "lucide-react";
 
