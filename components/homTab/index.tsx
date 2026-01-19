@@ -2,6 +2,8 @@ import { Download } from "lucide-react";
 import { skillCategories, socialLinks } from "./home.data";
 import { SkillCard } from "./skillCard";
 
+
+
 export default function HomeTab() {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12">

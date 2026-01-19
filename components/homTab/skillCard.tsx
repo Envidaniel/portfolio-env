@@ -1,13 +1,10 @@
 import { LucideIcon } from "lucide-react"
 import Image from "next/image";
+import { SkillCategory } from "./home.data";
 
 
 interface SkillCardProps {
-    category: {
-        icon: LucideIcon;
-        title: string;
-        skills: string[];
-    }
+    category: SkillCategory;
 }
 
 export const SkillCard = ({ category }: SkillCardProps) => (

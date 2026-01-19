@@ -1,6 +1,18 @@
-import { Cloud, Code, TabletSmartphone } from "lucide-react";
+import { Cloud, Code, LucideIcon, TabletSmartphone } from "lucide-react";
 
-export const socialLinks = [
+interface SocialLink {
+    icon: any;
+    url: string;
+    name: string;
+}
+
+export interface SkillCategory {
+    icon: LucideIcon;
+    title: string;
+    skills: string[];
+}
+
+export const socialLinks: SocialLink[] = [
     { icon: MdEmail, url: "mailto:envidaniel1@gmail.com", name: "Email" },
     { icon: FaLinkedin, url: "https://linkedin.com/in/envi-daniel", name: "LinkedIn" },
     { icon: FaMedium, url: "#", name: "Medium" },
@@ -9,11 +21,11 @@ export const socialLinks = [
     { icon: FaFacebook, url: "https://www.facebook.com/share/envidaniel", name: "Facebook" },
 ];
 
-export const skillCategories = [
+export const skillCategories: SkillCategory[] = [
     {
         icon: Code,
         title: "Web Development",
-        skills: ["react", "nextjs", , "nodejs", "nestjs", "postgresql", "mongodb", "vite"]
+        skills: ["react", "nextjs", "nodejs", "nestjs", "postgresql", "mongodb", "vite"]
     },
     {
         icon: TabletSmartphone,

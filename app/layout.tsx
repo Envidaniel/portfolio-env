@@ -8,7 +8,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Envi Daniel – Software Engineer | AI, Cloud & DevOps",
-  description: "Software Engineer portfolio showcasing projects in web development, AI-powered applications, cloud architecture, and DevOps automation."
+  description: "Software Engineer portfolio showcasing projects in web development, mobile development, AI-powered applications, cloud architecture, and DevOps automation."
 
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={spaceGrotesk.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" disableTransitionOnChange enableSystem={false}>
+        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem={false}>
           {children}
         </ThemeProvider>
       </body>
