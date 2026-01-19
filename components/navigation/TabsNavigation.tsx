@@ -1,16 +1,16 @@
 "use client";
+import { LucideIcon } from "lucide-react";
 import { motion } from "motion/react"
 
 
-interface Tab {
+interface NavigationTab {
     id: string;
     label: string;
-    icon: React.ComponentType<{ size?: number }>
-    component: React.ReactNode;
+    icon: LucideIcon
 }
 
 interface TabsNavigationProps {
-    tabs: Tab[];
+    tabs: NavigationTab[];
     activeTab: string;
     onChange: (id: string) => void;
 }

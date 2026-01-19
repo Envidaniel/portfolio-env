@@ -1,7 +1,7 @@
-import { Cloud, Code, LucideIcon, TabletSmartphone } from "lucide-react";
+import { Cloud, Code, Github, Linkedin, LucideIcon, Mail, TabletSmartphone, X, Youtube } from "lucide-react";
 
 interface SocialLink {
-    icon: any;
+    icon: React.ComponentType<{ size?: number; className?: string }>
     url: string;
     name: string;
 }
@@ -13,12 +13,11 @@ export interface SkillCategory {
 }
 
 export const socialLinks: SocialLink[] = [
-    { icon: MdEmail, url: "mailto:envidaniel1@gmail.com", name: "Email" },
-    { icon: FaLinkedin, url: "https://linkedin.com/in/envi-daniel", name: "LinkedIn" },
-    { icon: FaMedium, url: "#", name: "Medium" },
-    { icon: FaTwitter, url: "https://x.com/envidaniel", name: "Twitter" },
-    { icon: FaInstagram, url: "https://www.instagram.com/envi daniel", name: "Instagram" },
-    { icon: FaFacebook, url: "https://www.facebook.com/share/envidaniel", name: "Facebook" },
+    { icon: Mail, url: "mailto:envidaniel1@gmail.com", name: "Email" },
+    { icon: Linkedin, url: "https://linkedin.com/in/envi-daniel", name: "LinkedIn" },
+    { icon: X, url: "https://x.com/envidaniel", name: "Twitter" },
+    { icon: Github, url: "https://github.com/envidaniel", name: "Github" },
+    { icon: Youtube, url: "https://www.youtube.com/@envidaniel", name: "Youtube" }
 ];
 
 export const skillCategories: SkillCategory[] = [

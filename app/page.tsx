@@ -3,9 +3,7 @@ import { ProfileHeader } from "@/components/layout/header/ProfileHeader";
 import { TabsNavigation } from "@/components/navigation/TabsNavigation";
 import ThemeToggle from "@/components/theme-toggle";
 import { useTabs } from "@/hooks/useTabs";
-import { AnimatePresence } from "motion/react";
-
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 
 
 export default function Home() {
@@ -21,7 +19,9 @@ export default function Home() {
       <div className="w-full max-w-5xl mx-auto">
         <ProfileHeader />
 
-        <TabsNavigation tabs={tabs} activeTab={activeTab} onChange={setActiveTab} />
+        <div className="flex justify-center my-10">
+          <TabsNavigation tabs={tabs} activeTab={activeTab} onChange={setActiveTab} />
+        </div>
       </div>
 
       <div className="relative w-full min-h-[400px] p-4 md:p-8 bg-black/30 rounded-2xl">
@@ -32,7 +32,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -10, opacity: 0 }}
           >
-            {ActiveComponent}
+            {ActiveComponent && <ActiveComponent />}
           </motion.div>
         </AnimatePresence>
       </div>

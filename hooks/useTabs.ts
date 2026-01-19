@@ -4,9 +4,9 @@ import { useState } from "react";
 
 
 export function useTabs() {
-    const [activeTab, setActiveTab] = useState(tabs[0].id);
+    const [activeTab, setActiveTab] = useState<string>(tabs[0].id)
 
-    const ActiveComponent = tabs.find(tab => tab.id === activeTab)?.component;
+    const ActiveComponent: React.ComponentType | undefined = tabs.find(tab => tab.id === activeTab)?.component;
 
     return { tabs, activeTab, ActiveComponent, setActiveTab }
 }
