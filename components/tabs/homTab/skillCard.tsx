@@ -15,12 +15,13 @@ export const SkillCard = ({ category }: SkillCardProps) => (
         </div>
         <div className="flex flex-wrap gap-4 items-center">
             {category.skills.map((skill) => (
-                <div key={skill} className="flex items-center justify-center p-2 bg-gray-700/30 rounded-full grayscale hover:grayscale-0 transition-all">
+                <div key={skill.name} className="flex items-center justify-center p-2 bg-gray-700/30 rounded-full  hover:grayscale-0 transition-all">
                     <Image
-                        src={`/logos/${skill}.svg`}
-                        alt={skill}
-                        width={37}
-                        height={37}
+
+                        src={skill.iconPath}
+                        alt={skill.name}
+                        width={24}
+                        height={24}
                         className="object-contain"
                     />
                 </div>

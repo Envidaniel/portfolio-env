@@ -26,7 +26,7 @@ export const experienceData: Experience[] = [
     {
         role: "frontend",
         company: "Remote",
-        location: 'Lumbumbashi, Drc',
+        location: "Lumbumbashi, Drc",
         logo: "/logos/remote.svg",
         date: "01 December 2025 - 15 December 2025",
         tasks: [
@@ -56,6 +56,18 @@ export const experienceData: Experience[] = [
             "learn how a api works and using postman"
         ],
         tech: ['arduino', 'api', 'postman', 'php']
+    },
+    {
+        role: "frontend engineer",
+        company: "Remote",
+        location: "Lumbumbashi, Drc",
+        logo: "/logos/remote.svg",
+        date: "March 2024 - october 2024",
+        tasks: [
+            "consumme an nest.js  api for the Quote library with react js ",
+            "use swagger documentation for api endpoint"
+        ],
+        tech: ['reactjs', 'shadcn', 'swagger', 'axios', 'zustand', 'zod',]
     }
 
 ]

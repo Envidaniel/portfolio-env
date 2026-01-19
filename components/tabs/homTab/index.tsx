@@ -10,7 +10,7 @@ export default function HomeTab() {
             {/* Section profile */}
             <section className="lg:col-span-2 space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <h2 className="text-3xl font-bold text-accent">About Me</h2>
-                <p className="text-secondary leading-relaxed">
+                <p className="text-primary leading-relaxed">
                     Je construis et scale des produits SaaS et e-commerce haute performance
                     AWS · EKS · Kubernetes · Docker · TypeScript · Next.js · NestJS
                     Cloud-Native · Scalabilité horizontale · CI/CD · Observability
@@ -18,7 +18,7 @@ export default function HomeTab() {
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                     {
                         socialLinks.map(link => (
-                            <a href={link.url} key={link.name} target="_blank" className="text-secondary hover:text-primary transition-colors">
+                            <a href={link.url} key={link.name} target="_blank" className="text-primary hover:text-primary transition-colors">
                                 <link.icon size={24} />
                             </a>
                         ))
@@ -30,7 +30,7 @@ export default function HomeTab() {
                     Download my resume
                 </a>
             </section>
-            {/* Section competences */}
+            {/* Section skills */}
             <section className="lg:col-span-3 space-y-6">
                 <h2 className="text-3xl font-bold text-accent text-center lg:text-left">Skills</h2>
                 <div className="grid gap-6">

@@ -1,4 +1,4 @@
-import { Home, Briefcase, Code, Award, LucideIcon } from "lucide-react";
+import { Home, Briefcase, Code, Award, LucideIcon, MessageSquare } from "lucide-react";
 import HomeTab from "../tabs/homTab";
 import ExperienceTab from "../tabs/experience";
 import ProjectsTab from "../tabs/projects";
@@ -14,5 +14,5 @@ export interface TabConfig {
 export const tabs: TabConfig[] = [
     { id: "home", label: "Home", icon: Home, component: HomeTab },
     { id: "experience", label: "Experience", icon: Briefcase, component: ExperienceTab },
-    { id: "projects", label: "Projects", icon: Code, component: ProjectsTab },
+    { id: "projects", label: "Projects", icon: MessageSquare, component: ProjectsTab },
 ];
