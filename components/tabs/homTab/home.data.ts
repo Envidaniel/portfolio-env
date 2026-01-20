@@ -1,15 +1,16 @@
-import { Cloud, Code, Github, Linkedin, LucideIcon, Mail, TabletSmartphone, X, Youtube } from "lucide-react";
+import { CloudAlert, Code, Code2, Globe2, Globe2Icon, GlobeLock, GlobeLockIcon, LucideIcon, TabletSmartphoneIcon } from "lucide-react";
+
 
 export const socialLinks: SocialLink[] = [
-    { icon: Mail, url: "mailto:envidaniel1@gmail.com", name: "Email" },
-    { icon: Linkedin, url: "https://linkedin.com/in/envi-daniel", name: "LinkedIn" },
-    { icon: X, url: "https://x.com/envidaniel", name: "Twitter" },
-    { icon: Github, url: "https://github.com/envidaniel", name: "Github" },
-    { icon: Youtube, url: "https://www.youtube.com/@envidaniel", name: "Youtube" }
+    { iconPath: "/icons/socials/gmail.svg", url: "mailto:envidaniel1@gmail.com", name: "Email" },
+    { iconPath: "/icons/socials/linkedin.svg", url: "https://linkedin.com/in/envi-daniel", name: "LinkedIn" },
+    { iconPath: "/icons/socials/x.svg", url: "https://x.com/envidaniel", name: "Twitter" },
+    { iconPath: "/icons/socials/github.svg", url: "https://github.com/envidaniel", name: "Github" },
+    { iconPath: "/icons/socials/youtube.svg", url: "https://www.youtube.com/@envidaniel", name: "Youtube" }
 ];
 
 interface SocialLink {
-    icon: React.ComponentType<{ size?: number; className?: string }>
+    iconPath: string;
     url: string;
     name: string;
 }
@@ -28,7 +29,7 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
     {
-        icon: Code,
+        icon: GlobeLockIcon,
         title: "Web Development",
         skills: [
             { name: "React", iconPath: "/icons/skills/react.svg" },
@@ -40,7 +41,7 @@ export const skillCategories: SkillCategory[] = [
             { name: "Vite", iconPath: "/icons/skills/vitest.svg" }]
     },
     {
-        icon: TabletSmartphone,
+        icon: TabletSmartphoneIcon,
         title: "Mobile Development",
         skills: [
             { name: "Expo", iconPath: "/icons/skills/expo.svg" },
@@ -48,7 +49,7 @@ export const skillCategories: SkillCategory[] = [
         ]
     },
     {
-        icon: Cloud,
+        icon: CloudAlert,
         title: "DevOps & Cloud",
         skills: [
             { name: "Aws", iconPath: "/icons/skills/aws.svg" },

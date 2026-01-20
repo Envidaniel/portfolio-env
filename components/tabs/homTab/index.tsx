@@ -1,6 +1,7 @@
 import { Download } from "lucide-react";
 import { skillCategories, socialLinks } from "./home.data";
 import { SkillCard } from "./skillCard";
+import Image from "next/image";
 
 
 
@@ -19,7 +20,12 @@ export default function HomeTab() {
                     {
                         socialLinks.map(link => (
                             <a href={link.url} key={link.name} target="_blank" className="text-primary hover:text-primary transition-colors">
-                                <link.icon size={24} />
+                                <Image
+                                    src={link.iconPath}
+                                    alt={link.name}
+                                    width={18}
+                                    height={18}
+                                />
                             </a>
                         ))
                     }

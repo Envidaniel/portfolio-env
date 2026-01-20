@@ -15,7 +15,7 @@ export const SkillCard = ({ category }: SkillCardProps) => (
         </div>
         <div className="flex flex-wrap gap-4 items-center">
             {category.skills.map((skill) => (
-                <div key={skill.name} className="flex items-center justify-center p-2 bg-gray-700/30 rounded-full  hover:grayscale-0 transition-all">
+                <div key={skill.name} title={skill.name} className="flex items-center justify-center p-2 bg-gray-700/30 rounded-full  hover:grayscale-0 transition-all">
                     <Image
 
                         src={skill.iconPath}
