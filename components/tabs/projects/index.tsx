@@ -8,7 +8,7 @@ import { DEFAULT_PROJECT_DETAILS, PROJECT_DETAILS_MAP } from "./project.data";
 
 
 export default function ProjectsTab() {
-    const [projects, loading, error] = useGithubProjects('envi-daniel');
+    const [projects, loading, error] = useGithubProjects('Envidaniel');
     const [selectedProject, setSelectedProject] = useState<FullProjectDetails | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,16 +31,28 @@ export default function ProjectsTab() {
 
     return (
         <section>
-            <h2 className="text-3xl font-bold text-accent mb-8 text-center">My Open Source Work</h2>
+            <h2 className="text-3xl font-bold text-accent mb-8 text-center">My Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projects.map((project, index) => (
-                    <ProjectCard
-                        key={project.id}
-                        project={project}
-                        index={index}
-                        onClick={() => handleOpenModal(project)}  // on appelle notre fonction ici
-                    />
-                ))}
+                {projects
+                    .filter((project) => PROJECT_DETAILS_MAP.hasOwnProperty(project.name))
+                    .map((project, index) => {
+                        const extraDetails = PROJECT_DETAILS_MAP[project.name];
+
+                        const enrichedProject = {
+                            ...project,
+                            demoUrl: extraDetails?.demoUrl || project.homepage
+                        };
+
+                        return (
+                            <ProjectCard
+                                key={project.id}
+                                project={enrichedProject}
+                                index={index}
+                                onClick={() => handleOpenModal(enrichedProject)}
+                            />
+                        )
+                    })
+                }
             </div>
             {/*  La modale recoit l'etat et la fonction pour fermer */}
             <ProjectDetailsModal

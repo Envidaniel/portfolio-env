@@ -9,10 +9,12 @@ export interface GitHubProject {
     homepage: string | null;
     fork?: boolean;
     owner?: { login: string };
+    demoUrl?: string;
 }
 
 export interface ProjectDatails {
     detailedDescription: string;
+    demoUrl?: string;
     techStack: string[];
 }
 
