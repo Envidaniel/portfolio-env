@@ -16,7 +16,7 @@ export const ExperienceItem = ({ exp, isLast }: Props) => {
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-black/40 rounded-xl border border-white/10 p-2 shadow-lg group-hover:border-accent/50 transition-colors">
                     <Image src={exp.logo} alt={exp.company} width={40} height={40}
                         className="object-contain rounded-sm"
-                        onError={(e) => { (e.currentTarget as any).src = "/logos/remote.svg"; }} />
+                    />
                 </div>
                 {
                     !isLast && (
@@ -28,7 +28,10 @@ export const ExperienceItem = ({ exp, isLast }: Props) => {
             <div className="pb-10 w-full">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1 gap-1">
                     <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
-                        {exp.role}
+                        {exp.company}
+                        <span className="ml-2 text-sm font-normal text-secondary/60">
+                            • {exp.location}
+                        </span>
                     </h3>
                     <time className="text-xs font-mono uppercase tracking-wider text-secondary/70 bg-white/5 px-2 py-1 rounded" >
                         {exp.date}
@@ -36,7 +39,7 @@ export const ExperienceItem = ({ exp, isLast }: Props) => {
                 </div>
 
                 <p className="text-sm font-medium text-accent/80 mb-4">
-                    {exp.company} • {exp.location}
+                    {exp.role}
                 </p>
 
                 <ul className="space-y-2 mb-6">

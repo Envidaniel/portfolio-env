@@ -15,7 +15,7 @@ export const experienceData: Experience[] = [
         role: "stage",
         company: "EvoluData",
         location: "Canada, Usa",
-        logo: "/logos/evoludata.svg",
+        logo: "/images/company/evoTech.jpg",
         date: "November 2024 - December 2024",
         tasks: [
             "collaborate and see how the large team work",
@@ -27,7 +27,7 @@ export const experienceData: Experience[] = [
         role: "frontend",
         company: "Remote",
         location: "Lumbumbashi, Drc",
-        logo: "/logos/remote.svg",
+        logo: "/images/company/evoTech.jpg",
         date: "01 December 2025 - 15 December 2025",
         tasks: [
             "integrate a store for a ecommerce dog shop using nextjs"
@@ -38,7 +38,7 @@ export const experienceData: Experience[] = [
         role: "frontend engineer",
         company: "Evotech",
         location: "Butembo, Drc",
-        logo: "/logos/nexah.svg",
+        logo: "/images/company/evoTech.jpg",
         date: "April 2025 - Present",
         tasks: [
             "Build a bloc web app using nextjs for test the company",
@@ -49,7 +49,7 @@ export const experienceData: Experience[] = [
         role: "iot stage",
         company: "KiloVolt lab",
         location: "Goma",
-        logo: "/logos/kilovolt.svg",
+        logo: "/images/company/evoTech.jpg",
         date: "December 2024 - December 2024",
         tasks: [
             "Build a foot score with arduino",
@@ -61,7 +61,7 @@ export const experienceData: Experience[] = [
         role: "frontend engineer",
         company: "Remote",
         location: "Lumbumbashi, Drc",
-        logo: "/logos/remote.svg",
+        logo: "/images/company/evoTech.jpg",
         date: "March 2024 - october 2024",
         tasks: [
             "consumme an nest.js  api for the Quote library with react js ",

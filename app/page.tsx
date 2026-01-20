@@ -4,12 +4,17 @@ import { useTabs } from "@/hooks/useTabs";
 import { AnimatePresence, motion } from "motion/react";
 import { ProfileHeader } from "@/components/layout/header/ProfileHeader";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ProfileImage } from "@/components/ProfileImage";
 
 export default function Home() {
   const { tabs, activeTab, setActiveTab, ActiveComponent } = useTabs();
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-4 md:p-8">
+      {/* profile image */}
+      <div className="absolute top-5 left-5 z-50">
+        <ProfileImage />
+      </div>
       {/* Bouton de Thème */}
       <div className="absolute top-5 right-5 z-50">
         <ThemeToggle />
