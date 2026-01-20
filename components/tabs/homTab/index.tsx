@@ -1,11 +1,27 @@
-import { Download } from "lucide-react";
+'use client'
+import { CalendarArrowDown, Download } from "lucide-react";
 import { skillCategories, socialLinks } from "./home.data";
 import { SkillCard } from "./skillCard";
 import Image from "next/image";
+import { useEffect } from "react";
+import { getCalApi } from "@calcom/embed-react";
 
 
 
 export default function HomeTab() {
+
+    useEffect(() => {
+        (async function () {
+            const cal = await getCalApi();
+            cal("ui", {
+                theme: "dark",
+                styles: { branding: { brandColor: "#000000" } },
+                hideEventTypeDetails: false,
+                layout: "month_view"
+            })
+        })()
+    }, [])
+
     return (
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12">
             {/* Section profile */}
@@ -30,11 +46,18 @@ export default function HomeTab() {
                         ))
                     }
                 </div>
-                <a href="/CV_Envi_Daniel.pdf" download
+                <a href="/Envi_resume.pdf" download
                     className="inline-flex items-center gap-2 px-6 py-3 bg-accent/10 text-accent font-semibold rounded-full border border-accent/30 hover:bg-accent/20 transition-all">
                     <Download size={18} />
                     Download my resume
                 </a>
+                <button
+                    data-cal-link="envi-daniel-x89z9v"
+                    data-cal-config='{"layout":"month_view"}'
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-accent/10 text-accent font-semibold rounded-full border border-accent/30 hover:bg-accent/20 transition-all">
+                    <CalendarArrowDown size={18} />
+                    Book a meeting
+                </button>
             </section>
             {/* Section skills */}
             <section className="lg:col-span-3 space-y-6">

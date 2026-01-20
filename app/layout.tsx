@@ -8,7 +8,7 @@ import { CursorTrail } from "@/components/CursorTrail";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Envi Daniel – Software Engineer | AI, Cloud & DevOps",
+  title: "envi daniel",
   description: "Software Engineer portfolio showcasing projects in web development, mobile development, AI-powered applications, cloud architecture, and DevOps automation."
 
 };
