@@ -45,7 +45,9 @@ export const skillCategories: SkillCategory[] = [
         title: "Mobile Development",
         skills: [
             { name: "Expo", iconPath: "/icons/skills/expo.svg" },
-            { name: "Flutter", iconPath: "/icons/skills/flutter.svg" }
+            { name: "Flutter", iconPath: "/icons/skills/flutter.svg" },
+            { name: "Supabase", iconPath: "/icons/skills/supabase.svg" },
+            { name: "Firebase", iconPath: "/icons/skills/firebase.svg" }
         ]
     },
     {

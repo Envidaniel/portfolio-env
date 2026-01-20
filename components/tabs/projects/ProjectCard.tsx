@@ -35,7 +35,7 @@ export const ProjectCard = ({ project, index, onClick }: Props) => (
             <h3 className="text-lg font-bold text-primary mb-2">{project.name}</h3>
             <p className="text-secondary text-sm flex-grow line-clamp-2 mb-4">{project.description}</p>
 
-            <div className="flext gap-4 pt-4 border-t border-white/5">
+            <div className="flex gap-4 pt-4 border-t border-white/5">
                 <a href={project.html_url} target="_blank" className="flex items-center gap-2 text-secondary hover:text-accent"><FolderGit2 size={14} />Code</a>
                 {project.demoUrl && <a href={project.demoUrl} target="_blank" className="flex items-center gap-2 text-xs text-secondary hover:text-accent"><ExternalLink size={14} />Demo</a>}
             </div>

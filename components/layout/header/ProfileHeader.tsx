@@ -8,7 +8,7 @@ export function ProfileHeader() {
                 ENVI DANIEL
             </h1>
             <p className="text-base md:text-lg  text-primary mt-3">
-                Software Engineer | Cloud & DevOps | Ai Tools
+                Software Engineer | DevOps & Cloud | Ai Tools
             </p>
         </div>
     )

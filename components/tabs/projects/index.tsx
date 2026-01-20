@@ -1,26 +1,16 @@
 import { useGithubProjects } from "@/hooks/useGithubProjects";
 import { AlertTriangle, Loader } from "lucide-react";
-import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
-import { ProjectDetailsModal } from "./projectDetailsModal";
-import { FullProjectDetails, GitHubProject } from "@/types/projects";
-import { DEFAULT_PROJECT_DETAILS, PROJECT_DETAILS_MAP } from "./project.data";
-
+import { PROJECT_DETAILS_MAP } from "./project.data";
 
 export default function ProjectsTab() {
     const [projects, loading, error] = useGithubProjects('Envidaniel');
-    const [selectedProject, setSelectedProject] = useState<FullProjectDetails | null>(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    // Fonction pour ouvrir la modale proprement
-
-    const handleOpenModal = (project: GitHubProject) => {
-        const extraDetails = PROJECT_DETAILS_MAP[project.name] || DEFAULT_PROJECT_DETAILS;
-        setSelectedProject({ ...project, ...extraDetails });
-        setIsModalOpen(true);
-    }
-
-    if (loading) return <div className="flex justify-center py-20"><Loader className="animate-spin text-accent" /></div>
+    if (loading) return (
+        <div className="flex justify-center py-20">
+            <Loader className="animate-spin text-accent" />
+        </div>
+    );
 
     if (error) return (
         <div className="text-center py-20">
@@ -38,9 +28,10 @@ export default function ProjectsTab() {
                     .map((project, index) => {
                         const extraDetails = PROJECT_DETAILS_MAP[project.name];
 
+                        // On fusionne les données de GitHub avec tes démos manuelles
                         const enrichedProject = {
                             ...project,
-                            demoUrl: extraDetails?.demoUrl || project.homepage
+                            demoUrl: extraDetails?.demoUrl || project.homepage || ""
                         };
 
                         return (
@@ -48,19 +39,13 @@ export default function ProjectsTab() {
                                 key={project.id}
                                 project={enrichedProject}
                                 index={index}
-                                onClick={() => handleOpenModal(enrichedProject)}
+                                // On passe une fonction vide car la modale n'existe plus
+                                onClick={() => { }}
                             />
-                        )
+                        );
                     })
                 }
             </div>
-            {/*  La modale recoit l'etat et la fonction pour fermer */}
-            <ProjectDetailsModal
-                project={selectedProject}
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-            />
         </section>
-    )
-
+    );
 }
