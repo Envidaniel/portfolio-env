@@ -28,9 +28,11 @@ export default function HomeTab() {
             <section className="lg:col-span-2 space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <h2 className="text-3xl font-bold text-accent">About Me</h2>
                 <p className="text-primary leading-relaxed">
-                    Je construis et scale des produits SaaS et e-commerce haute performance
-                    AWS · EKS · Kubernetes · Docker · TypeScript · Next.js · NestJS
-                    Cloud-Native · Scalabilité horizontale · CI/CD · Observability
+
+                    Que vous soyez une startup ou une PME,
+                    Je vous aide à construire et scale des produits  haute performance dans la conception
+                    et le déploiement d'applications web et mobiles(SaaS et E-commerce) évolutives et performantes.
+
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                     {
@@ -46,7 +48,7 @@ export default function HomeTab() {
                         ))
                     }
                 </div>
-                <a href="/Envi_resume.pdf" download
+                <a href="/envi_resume.pdf" download
                     className="inline-flex items-center gap-2 px-6 py-3 bg-accent/10 text-accent font-semibold rounded-full border border-accent/30 hover:bg-accent/20 transition-all">
                     <Download size={18} />
                     Download my resume
