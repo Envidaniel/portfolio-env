@@ -55,7 +55,7 @@ export const skillCategories: SkillCategory[] = [
         title: "Infrastructure",
         skills: [
             { name: "Aws", iconPath: "/icons/skills/aws.svg" },
-            // { name: "Azure", iconPath: "/icons/skills/azure.svg" },
+            { name: "Arduino", iconPath: "/icons/skills/arduino.svg" },
             // { name: "Google cloud", iconPath: "/icons/skills/googleCloud.svg" },
             { name: "Docker", iconPath: "/icons/skills/docker.svg" },
             { name: "Redis", iconPath: "/icons/skills/redis.svg" },

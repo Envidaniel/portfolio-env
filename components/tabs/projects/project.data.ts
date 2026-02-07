@@ -4,6 +4,11 @@ import { ProjectDatails } from "@/types/projects";
 export const PROJECT_DETAILS_MAP: Record<string, ProjectDatails> = {
     'online-vote': {
         detailedDescription: 'A modern voting platform built with Next.js and Supabase. Users can create polls, add candidates, publish polls, and share them with their community. Voters must be authenticated, and the platform',
+
+        techStack: ['nextjs', 'supabase', 'zod', 'google cloud']
+    },
+    'Hermes': {
+        detailedDescription: 'A modern voting platform built with Next.js and Supabase. Users can create polls, add candidates, publish polls, and share them with their community. Voters must be authenticated, and the platform',
         demoUrl: "https://google.com",
         techStack: ['nextjs', 'supabase', 'zod', 'google cloud']
     },

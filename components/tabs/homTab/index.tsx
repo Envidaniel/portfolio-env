@@ -29,9 +29,8 @@ export default function HomeTab() {
                 <h2 className="text-3xl font-bold text-accent">About Me</h2>
                 <p className="text-primary leading-relaxed">
 
-                    Que vous soyez une startup ou une PME,
-                    Je vous aide à construire et scale des produits  haute performance dans la conception
-                    et le déploiement d'applications web et mobiles(SaaS et E-commerce) évolutives et performantes.
+                    Que vous soyez  startups et PME je vous aide à bâtir des solutions logicielles et IoT performantes, pensées pour la scalabilité, la sécurité et la croissance.De l’idée au déploiement :
+                    Web & Mobile (SaaS, E-commerce)-IoT & systèmes connectés intelligents 📩 Discutons de votre projet dès maintenant.
 
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
