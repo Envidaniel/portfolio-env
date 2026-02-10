@@ -22,11 +22,11 @@ export const ProjectCard = ({ project, index, onClick }: Props) => {
                 {/* Image Section */}
                 <div className="relative w-full h-44 mb-4 rounded-lg overflow-hidden cursor-pointer" onClick={onClick}>
                     <Image
-                        src={`/images/projects/${project.name}.jpg`}
+                        src={`/images/projects/${project.name}.png`}
                         alt={project.name}
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
-                        onError={(e) => { (e.currentTarget as any).src = '/images/projects/default.jpg'; }}
+                        onError={(e) => { (e.currentTarget as any).src = '/images/projects/default.png'; }}
                     />
                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <ZoomIn className="text-white h-8 w-8" />
