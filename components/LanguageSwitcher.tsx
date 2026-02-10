@@ -26,7 +26,7 @@ export const LanguageSwitcher = () => {
         <button
             onClick={toggleLanguage}
             disabled={isPending}
-            className={`relative w-16 h-8 flex items-center rounded-full p-1 transition-colors duration-300 ${isDarkMode ? "bg-black/30" : "bg-white/30"}`}
+            className={`hidden md:flex relative w-16 h-8 items-center rounded-full p-1 transition-colors duration-300 ${isDarkMode ? "bg-black/30" : "bg-white/30"}`}
         >
             <span className={`absolute left-2 z-10 text-xs font-bold transition-opacity duration-300 ${!isFrench ? "opacity-100" : "opacity-50"}`}>
                 EN
