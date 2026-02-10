@@ -11,8 +11,12 @@ import { routing } from "@/i18n/routing";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "envi daniel",
-    description: "Software Engineer portfolio showcasing projects in web development, mobile development, AI-powered applications, cloud architecture, and DevOps automation."
+    title: "Envi Daniel",
+    icons: {
+        icon: "/favicon.ico",
+        apple: "/apple-touch-icon.png"
+    },
+    description: "Software Engineer portfolio showcasing projects in web development, mobile development, IoT system, AI-powered applications, , and DevOps automation."
 };
 
 export default async function LocaleLayout({

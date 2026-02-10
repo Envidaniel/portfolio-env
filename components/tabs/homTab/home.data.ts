@@ -3,7 +3,7 @@ import { CloudAlert, Code, Code2, Globe2, Globe2Icon, GlobeLock, GlobeLockIcon, 
 
 export const socialLinks: SocialLink[] = [
     { iconPath: "/icons/socials/gmail.svg", url: "mailto:envidaniel1@gmail.com", name: "Email" },
-    { iconPath: "/icons/socials/linkedin.svg", url: "https://linkedin.com/in/envi-daniel", name: "LinkedIn" },
+    { iconPath: "/icons/socials/linkedin.svg", url: "https://www.linkedin.com/in/envi-daniel-8980b7382", name: "LinkedIn" },
     { iconPath: "/icons/socials/x.svg", url: "https://x.com/envidaniel", name: "Twitter" },
     { iconPath: "/icons/socials/github.svg", url: "https://github.com/envidaniel", name: "Github" },
     { iconPath: "/icons/socials/youtube.svg", url: "https://www.youtube.com/@envidaniel", name: "Youtube" }
@@ -44,6 +44,7 @@ export const skillCategories: SkillCategory[] = [
         icon: TabletSmartphoneIcon,
         title: "skill_mobile",
         skills: [
+            { name: "React Native", iconPath: "/icons/skills/reactNative.svg" },
             { name: "Expo", iconPath: "/icons/skills/expo.svg" },
             // { name: "Flutter", iconPath: "/icons/skills/flutter.svg" },
             { name: "Supabase", iconPath: "/icons/skills/supabase.svg" },

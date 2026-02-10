@@ -25,6 +25,17 @@ export const experienceData: Experience[] = [
     },
     {
         role: "frontend",
+        company: "Softadastra",
+        location: "Kampala, Ug",
+        logo: "/images/company/softadastra.jpg",
+        date: "14 march 2025 - 04 april 2025",
+        tasks: [
+            "build auth and a simple dashboard"
+        ],
+        tech: ['React', "tailwind", 'axios']
+    },
+    {
+        role: "frontend",
         company: "Remote",
         location: "Lumbumbashi, Drc",
         logo: "/images/company/remote.jpg",

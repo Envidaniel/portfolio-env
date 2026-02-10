@@ -18,24 +18,24 @@ export const ProjectCard = ({ project, index, onClick }: Props) => {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
         >
-            <div className="group h-full flex flex-col bg-card-bg p-4 rounded-xl border border-border-color hover:border-accent/50 transition-all shadow-lg hover:shadow-accent/5">
+            <div className="group/project h-full flex flex-col bg-card-bg p-4 rounded-xl border border-border-color hover:border-accent/50 transition-all shadow-lg hover:shadow-accent/5">
                 {/* Image Section */}
                 <div className="relative w-full h-44 mb-4 rounded-lg overflow-hidden cursor-pointer" onClick={onClick}>
                     <Image
                         src={`/images/projects/${project.name}.png`}
                         alt={project.name}
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover group-hover/project:scale-110 transition-transform duration-500"
                         onError={(e) => { (e.currentTarget as any).src = '/images/projects/default.png'; }}
                     />
-                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover/project:opacity-100 transition-opacity flex items-center justify-center">
                         <ZoomIn className="text-white h-8 w-8" />
                     </div>
                 </div>
 
                 {/* Content Section */}
                 <div className="flex flex-col flex-grow">
-                    <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                    <h3 className="text-lg font-bold text-primary mb-2 group-hover/project:text-accent transition-colors">
                         {project.name}
                     </h3>
 
