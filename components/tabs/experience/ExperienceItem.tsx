@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Experience } from "./experience.data";
 import { Badge } from "../../ui/Badge";
+import { useTranslations } from "next-intl";
 
 
 interface Props {
@@ -9,6 +10,8 @@ interface Props {
 }
 
 export const ExperienceItem = ({ exp, isLast }: Props) => {
+    const t = useTranslations('Experience');
+
     return (
         <div className="flex gap-4 sm:gap-6 group">
             {/* Colonne TimeLine (logo + ligne) */}
@@ -39,7 +42,7 @@ export const ExperienceItem = ({ exp, isLast }: Props) => {
                 </div>
 
                 <p className="text-sm font-medium text-accent/80 mb-4">
-                    {exp.role}
+                    {t(`roles.${exp.role}` as any)}
                 </p>
 
                 <ul className="space-y-2 mb-6">
@@ -47,7 +50,7 @@ export const ExperienceItem = ({ exp, isLast }: Props) => {
                         exp.tasks.map((task, i) => (
                             <li key={i} className="text-secondary text-sm flex gap-2">
                                 <span className="text-accent text-lg leading-none">•</span>
-                                {task}
+                                {t(`tasks.${task}` as any)}
                             </li>
                         ))
                     }

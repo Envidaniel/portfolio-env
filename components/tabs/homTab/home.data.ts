@@ -30,7 +30,7 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
     {
         icon: GlobeLockIcon,
-        title: "Web Development",
+        title: "skill_web",
         skills: [
             { name: "React", iconPath: "/icons/skills/react.svg" },
             { name: "Nextjs", iconPath: "/icons/skills/next.svg" },
@@ -42,7 +42,7 @@ export const skillCategories: SkillCategory[] = [
     },
     {
         icon: TabletSmartphoneIcon,
-        title: "Mobile Development",
+        title: "skill_mobile",
         skills: [
             { name: "Expo", iconPath: "/icons/skills/expo.svg" },
             // { name: "Flutter", iconPath: "/icons/skills/flutter.svg" },
@@ -52,7 +52,7 @@ export const skillCategories: SkillCategory[] = [
     },
     {
         icon: ToolCase,
-        title: "Infrastructure",
+        title: "skill_infra",
         skills: [
             { name: "Aws", iconPath: "/icons/skills/aws.svg" },
             { name: "Arduino", iconPath: "/icons/skills/arduino.svg" },

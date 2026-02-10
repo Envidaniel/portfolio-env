@@ -1,0 +1,65 @@
+{
+    "HomePage": {
+        "title": "Bienvenue",
+        "about_title": "À propos de moi",
+        "about_desc": "Que vous soyez startups et PME je vous aide à bâtir des solutions logicielles et IoT performantes, pensées pour la scalabilité, la sécurité et la croissance. De l’idée au déploiement : Web & Mobile (SaaS, E-commerce)-IoT & systèmes connectés intelligents 📩 Discutons de votre projet dès maintenant.",
+        "download_resume": "Télécharger mon CV",
+        "book_meeting": "Prendre rendez-vous",
+        "skills_title": "Compétences",
+        "skill_web": "Développement Web",
+        "skill_mobile": "Développement Mobile",
+        "skill_infra": "Infrastructure"
+    },
+    "Profile": {
+        "name": "ENVI DANIEL",
+        "title": "Développeur Full Stack | Web & Mobile | IoT"
+    },
+    "Navigation": {
+        "home": "Accueil",
+        "experience": "Expérience",
+        "projects": "Projets"
+    },
+    "Tabs": {
+        "home": "Accueil",
+        "experience": "Expérience",
+        "projects": "Projets"
+    },
+    "Experience": {
+        "roles": {
+            "stage": "Stagiaire",
+            "frontend": "Développeur Frontend",
+            "frontend_engineer": "Ingénieur Frontend",
+            "iot_stage": "Stagiaire IoT"
+        },
+        "tasks": {
+            "evolu_1": "Collaborer et voir comment une grande équipe travaille",
+            "evolu_2": "Construire une application web full-stack pour les stagiaires",
+            "remote_1": "Intégrer une boutique pour un commerce de chiens utilisant Next.js",
+            "evotech_1": "Construire une application de blog avec Next.js pour les tests de l'entreprise",
+            "kilo_1": "Construire un score de foot avec Arduino",
+            "kilo_2": "Apprendre comment fonctionne une API et utiliser Postman",
+            "remote_2": "Consommer une API Nest.js pour la bibliothèque de citations avec React.js",
+            "remote_3": "Utiliser la documentation Swagger pour les points de terminaison de l'API"
+        }
+    },
+    "Projects": {
+        "online_vote": {
+            "description": "Une plateforme de vote moderne construite avec Next.js et Supabase."
+        },
+        "luxeshop": {
+            "description": "Une boutique de commerce moderne."
+        },
+        "hermes": {
+            "description": "Une plateforme de messagerie."
+        },
+        "excelxiore": {
+            "description": "Un outil de productivité."
+        },
+        "ecommerce_social": {
+            "description": "Application e-commerce pour les gens qui veulent vendre leurs produits."
+        },
+        "portfolio": {
+            "description": "Ce portfolio a été construit avec Next.js pour un rendu rapide."
+        }
+    }
+}

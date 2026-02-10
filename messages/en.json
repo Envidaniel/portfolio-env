@@ -1,0 +1,65 @@
+{
+    "HomePage": {
+        "title": "Welcome",
+        "about_title": "About Me",
+        "about_desc": "Whether you are a startup or SME, I help you build high-performance software and IoT solutions, designed for scalability, security, and growth. From idea to deployment: Web & Mobile (SaaS, E-commerce) - IoT & intelligent connected systems 📩 Let's discuss your project now.",
+        "download_resume": "Download my resume",
+        "book_meeting": "Book a meeting",
+        "skills_title": "Skills",
+        "skill_web": "Web Development",
+        "skill_mobile": "Mobile Development",
+        "skill_infra": "Infrastructure"
+    },
+    "Profile": {
+        "name": "ENVI DANIEL",
+        "title": "Full Stack Developer | Web & Mobile | IoT"
+    },
+    "Navigation": {
+        "home": "Home",
+        "experience": "Experience",
+        "projects": "Projects"
+    },
+    "Tabs": {
+        "home": "Home",
+        "experience": "Experience",
+        "projects": "Projects"
+    },
+    "Experience": {
+        "roles": {
+            "stage": "Intern",
+            "frontend": "Frontend Developer",
+            "frontend_engineer": "Frontend Engineer",
+            "iot_stage": "IoT Intern"
+        },
+        "tasks": {
+            "evolu_1": "Collaborate and see how the large team work",
+            "evolu_2": "Build a full-stack web application for trainee",
+            "remote_1": "Integrate a store for an ecommerce dog shop using Next.js",
+            "evotech_1": "Build a blog web app using Next.js for company tests",
+            "kilo_1": "Build a foot score with Arduino",
+            "kilo_2": "Learn how an API works and use Postman",
+            "remote_2": "Consume a Nest.js API for the Quote library with React.js",
+            "remote_3": "Use Swagger documentation for API endpoint"
+        }
+    },
+    "Projects": {
+        "online_vote": {
+            "description": "A modern voting platform built with Next.js and Supabase. Users can create polls, add candidates, publish polls, and share them with their community."
+        },
+        "luxeshop": {
+            "description": "A modern ecommerce shop."
+        },
+        "hermes": {
+            "description": "A messaging platform."
+        },
+        "excelxiore": {
+            "description": "A productivity tool."
+        },
+        "ecommerce_social": {
+            "description": "Ecommerce application for people who want to sell their products."
+        },
+        "portfolio": {
+            "description": "This portfolio was built with Next.js for fast rendering."
+        }
+    }
+}
