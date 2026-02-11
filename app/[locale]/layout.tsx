@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         icon: "/favicon.ico",
         apple: "/apple-touch-icon.png"
     },
-    description: "Software Engineer portfolio showcasing projects in web development, mobile development, IoT system, AI-powered applications, , and DevOps automation."
+    description: "Software Engineer portfolio showcasing projects in web development, mobile development, IoT system, AI-powered applications,"
 };
 
 export default async function LocaleLayout({
