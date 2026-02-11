@@ -22,7 +22,7 @@ export const ProjectCard = ({ project, index, onClick }: Props) => {
                 {/* Image Section */}
                 <div className="relative w-full h-44 mb-4 rounded-lg overflow-hidden cursor-pointer" onClick={onClick}>
                     <Image
-                        src={`/images/projects/${project.name}.png`}
+                        src={`/images/${project.name}.png`}
                         alt={project.name}
                         fill
                         className="object-cover group-hover/project:scale-110 transition-transform duration-500"
