@@ -50,7 +50,7 @@ export const experienceData: Experience[] = [
         company: "Evotech",
         location: "Butembo, Drc",
         logo: "/images/company/evoTech.jpg",
-        date: "April 2025 - April 2025",
+        date: "April 2025 - October 2025",
         tasks: [
             "evotech_1"
         ],
