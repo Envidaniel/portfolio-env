@@ -43,7 +43,7 @@ export const experienceData: Experience[] = [
         tasks: [
             "remote_1"
         ],
-        tech: ['nextjs', 'css', 'next-intl',]
+        tech: ['nextjs', 'css', 'next-intl(i18n)',]
     },
     {
         role: "frontend_engineer",
