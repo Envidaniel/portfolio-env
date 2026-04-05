@@ -12,6 +12,40 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
     {
+        role: "frontend",
+        company: "Remote",
+        location: "Lumbumbashi, Drc",
+        logo: "/images/company/remote.jpg",
+        date: "01 December 2025 - 15 December 2025",
+        tasks: [
+            "remote_1"
+        ],
+        tech: ['nextjs', 'css', 'next-intl(i18n)',]
+    },
+    {
+        role: "frontend",
+        company: "Remote",
+        location: "Lumbumbashi, Drc",
+        logo: "/images/company/remote.jpg",
+        date: "March 2024 - october 2024",
+        tasks: [
+            "remote_2",
+            "remote_3"
+        ],
+        tech: ['reactjs', 'shadcn', 'swagger', 'axios', 'zustand', 'zod',]
+    },
+    {
+        role: "frontend_engineer",
+        company: "Evotech",
+        location: "Butembo, Drc",
+        logo: "/images/company/evoTech.jpg",
+        date: "April 2025 - October 2025",
+        tasks: [
+            "evotech_1"
+        ],
+        tech: ['nextjs', 'tailwindcss', 'typescript', 'react', 'framer-motion']
+    },
+    {
         role: "stage",
         company: "EvoluData",
         location: "Canada, Usa",
@@ -35,28 +69,6 @@ export const experienceData: Experience[] = [
         tech: ['React', "tailwind", 'axios']
     },
     {
-        role: "frontend",
-        company: "Remote",
-        location: "Lumbumbashi, Drc",
-        logo: "/images/company/remote.jpg",
-        date: "01 December 2025 - 15 December 2025",
-        tasks: [
-            "remote_1"
-        ],
-        tech: ['nextjs', 'css', 'next-intl(i18n)',]
-    },
-    {
-        role: "frontend_engineer",
-        company: "Evotech",
-        location: "Butembo, Drc",
-        logo: "/images/company/evoTech.jpg",
-        date: "April 2025 - October 2025",
-        tasks: [
-            "evotech_1"
-        ],
-        tech: ['nextjs', 'tailwindcss', 'typescript', 'react', 'framer-motion']
-    },
-    {
         role: "iot_stage",
         company: "KiloVolt lab",
         location: "Goma",
@@ -67,17 +79,5 @@ export const experienceData: Experience[] = [
             "kilo_2"
         ],
         tech: ['arduino', 'api', 'postman', 'php']
-    },
-    {
-        role: "frontend",
-        company: "Remote",
-        location: "Lumbumbashi, Drc",
-        logo: "/images/company/remote.jpg",
-        date: "March 2024 - october 2024",
-        tasks: [
-            "remote_2",
-            "remote_3"
-        ],
-        tech: ['reactjs', 'shadcn', 'swagger', 'axios', 'zustand', 'zod',]
     }
 ]
