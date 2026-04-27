@@ -37,6 +37,7 @@ export const skillCategories: SkillCategory[] = [
             { name: "Nodejs", iconPath: "/icons/skills/nodejs.svg" },
             { name: "Nestjs", iconPath: "/icons/skills/nestjs.svg" },
             { name: "Django", iconPath: "/icons/skills/django.svg" },
+            { name: "FastApi", iconPath: "/icons/skills/fastapi.svg" },
             { name: "Postgresql", iconPath: "/icons/skills/postgresql.svg" },
             { name: "Mongodb", iconPath: "/icons/skills/mongodb.svg" },
             { name: "Vite", iconPath: "/icons/skills/vitest.svg" }]
